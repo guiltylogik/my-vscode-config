@@ -1,0 +1,154 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "files.autoSave": "onFocusChange",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "extensions.autoUpdate": false,
+    "update.enableWindowsBackgroundUpdates": false,
+    "editor.stickyScroll.enabled": true,
+
+    // Dart/Flutter
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "dart.flutterCreateOrganization": "dev.ifechi",
+
+    // GIT BASH
+    "terminal.integrated.cursorStyle": "underline",
+    // "terminal.integrated.fontFamily": "VictorMono NF",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.profiles.windows": {
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+
+    // Better Defaults
+    "editor.copyWithSyntaxHighlighting": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.emptySelectionClipboard": false,
+    "workbench.editor.enablePreview": true,
+    "window.newWindowDimensions": "offset",
+    "files.trimTrailingWhitespace": true,
+    "editor.snippetSuggestions": "top",
+    "editor.detectIndentation": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    // "editor.glyphMargin": false,
+    "editor.guides.indentation": false,
+    "editor.scrollbar.horizontalScrollbarSize": 4,
+    "editor.scrollbar.verticalScrollbarSize": 4,
+    "explorer.compactFolders": false,
+    "explorer.openEditors.visible": 0,
+
+    // Hide Everything
+    "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+    "workbench.editor.showTabs": false,
+    "diffEditor.renderSideBySide": false,
+    "workbench.sideBar.location": "right",
+    "scm.diffDecorations": "gutter",
+    "editor.hover.enabled": true,
+    "editor.matchBrackets": "near",
+    "workbench.tips.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.selectionHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "all",
+    "editor.occurrencesHighlight": false,
+    "problems.decorations.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+    // Typography
+    "workbench.colorTheme": "Palenight (Mild Contrast)",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "MonoLisa",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 45,
+    "editor.suggestFontSize": 14,
+    "editor.suggestLineHeight": 27,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.lineHeight": 1.5,
+
+    // Find
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        // Hide everything in /vendor, except the "laravel" and "livewire" folder.
+        "**/vendor/{[^l],?[^ai]}*": true,
+        // Hide everything in /public, except "index.php"
+        "**/public/{[^i],?[^n]}*": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/_ide_helper.php": true,
+        "**/composer.lock": true,
+        "**/package-lock.json": true,
+        "storage": true,
+        ".phpunit.result.cache": true
+    },
+
+    "explorer.confirmDelete": false,
+    "editor.linkedEditing": true,
+    "window.menuBarVisibility": "toggle",
+    "window.title": "${activeEditorShort}${separator}${rootName}",
+
+    // "customizeUI.titleBar": "frameless",
+    "customizeUI.activityBar": "bottom",
+    // "customizeUI.activityBarHideSettings":true,
+    "customizeUI.stylesheet": {
+        //  Hide app icon
+        ".windows a.window-appicon": "visibility: hidden; width: 0px !important; height: 0px !important",
+
+        // Layout Toggles
+        ".monaco-toolbar .monaco-action-bar.animated": "visibility: hidden;",
+        ".monaco-toolbar:hover .monaco-action-bar.animated": "visibility: initial;",
+
+        // Title Bar
+        ".monaco-workbench .part.titlebar": "flex-direction: row-reverse;",
+        ".window-controls-container": "flex-direction: row-reverse; margin-left: 0px !important; margin-right: 10px; ",
+
+        ".editor .title": "background: transparent !important;",
+        ".editor .title .label-container": "visibility: hidden;",
+
+        // Hide top-right buttons
+        ".editor .title .actions-container .action-item a": "visibility: hidden;",
+        ".editor .title .actions-container:hover .action-item a": "visibility: initial;",
+
+        // Show top-right "settings goto icon"
+        ".editor .title .actions-container .action-item a[title=\"Open Settings (UI)\"]": "visibility: initial;",
+        ".editor .title .actions-container .action-item a[title=\"Open Settings (JSON)\"]": "visibility: initial;",
+
+        // Make it the "right-most" icon.
+        ".editor .title .actions-container": "flex-direction: row-reverse;",
+
+        // Only Show Terminal Title bar on Hover
+        ".composite.title .composite-bar": "visibility: hidden;",
+        ".composite.title:hover .composite-bar": "visibility: initial",
+
+        // Change cursor color.
+        ".monaco-editor .cursor": "background: linear-gradient(to bottom, #7f00ff, #e100ff) !important; color: #292D3E !important",
+
+        ".decorationsOverviewRuler": "display: none;",
+    },
+}
